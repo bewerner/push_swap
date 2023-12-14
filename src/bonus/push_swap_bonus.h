@@ -1,35 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   push_swap_bonus.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bwerner <bwerner@student.42heilbronn.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 17:18:22 by bwerner           #+#    #+#             */
-/*   Updated: 2023/12/12 04:52:25 by bwerner          ###   ########.fr       */
+/*   Created: 2023/11/16 17:23:07 by bwerner           #+#    #+#             */
+/*   Updated: 2023/12/12 07:56:29 by bwerner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1024
-# endif
-
-# include <unistd.h>
-# include <stdlib.h>
-
-typedef struct s_gnl
-{
-	char	*line;
-	char	*jstr;
-	int		nl_found;
-	int		read;
-	size_t	i;
-	size_t	j;
-}			t_gnl;
-
-char	*get_next_line(int fd);
+#ifndef PUSH_SWAP_BONUS_H
+# define PUSH_SWAP_BONUS_H
+# include "../push_swap.h"
 
 #endif

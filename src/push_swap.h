@@ -6,13 +6,13 @@
 /*   By: bwerner <bwerner@student.42heilbronn.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:23:07 by bwerner           #+#    #+#             */
-/*   Updated: 2023/12/10 22:51:27 by bwerner          ###   ########.fr       */
+/*   Updated: 2023/12/12 02:20:21 by bwerner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
-# include "libft/libft.h"
+# include "../libft/libft.h"
 
 typedef struct s_push_swap
 {
@@ -22,33 +22,15 @@ typedef struct s_push_swap
 	int		*a;
 	int		*b;
 	int		*cost;
-	int		*pin;
-	int		first_pin_i;
-	int		last_pin_i;
-	int		initial_pin_nbr;
-	int		pin_count;
-	int		pin_i;
-	int		swap_i;
-	int		prev_pin_i;
-	int		next_pin_i;
-	int		print_stacks;
 	int		instruction_count;
-	int		chunk_size;
-	int		min_b;
-	int		max_b;
-	int		min_b_i;
-	int		max_b_i;
 	int		min_a;
 	int		max_a;
 	int		min_a_i;
 	int		max_a_i;
-	int		swap_cost;
-	int		print_instructions;
-	int		best_run;
-	int		best_swap_cost;
 	int		group_count;
 	int		group_size;
 	int		argc;
+	int		print_instructions;
 }			t_push_swap;
 
 void	map_to_sorted_index(int j, int i, t_push_swap *s);

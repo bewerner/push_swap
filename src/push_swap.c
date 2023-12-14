@@ -1,35 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bwerner <bwerner@student.42heilbronn.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 17:18:22 by bwerner           #+#    #+#             */
-/*   Updated: 2023/12/12 04:52:25 by bwerner          ###   ########.fr       */
+/*   Created: 2023/12/12 07:22:01 by bwerner           #+#    #+#             */
+/*   Updated: 2023/12/12 07:22:30 by bwerner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "push_swap.h"
 
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1024
-# endif
-
-# include <unistd.h>
-# include <stdlib.h>
-
-typedef struct s_gnl
+int	main(int argc, char **argv)
 {
-	char	*line;
-	char	*jstr;
-	int		nl_found;
-	int		read;
-	size_t	i;
-	size_t	j;
-}			t_gnl;
+	t_push_swap	s;
 
-char	*get_next_line(int fd);
-
-#endif
+	s.argc = argc;
+	s.cost = NULL;
+	s.a = NULL;
+	s.b = NULL;
+	s.print_instructions = 1;
+	if (argc > 2)
+		push_swap(&s, argv + 1);
+	if (argc == 2)
+	{
+		whitespace_to_space(argv[1]);
+		push_swap(&s, ft_split(argv[1], ' '));
+	}
+	free_stacks(&s);
+	return (0);
+}

@@ -6,7 +6,7 @@
 /*   By: bwerner <bwerner@student.42heilbronn.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 22:25:38 by bwerner           #+#    #+#             */
-/*   Updated: 2023/12/10 22:25:47 by bwerner          ###   ########.fr       */
+/*   Updated: 2023/12/12 03:48:57 by bwerner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	operate(char *instruction, t_push_swap *s)
 		op_shift_up(instruction, s);
 	if (instruction[0] == 'r' && instruction[2] != '\0')
 		op_shift_down(instruction, s);
-	ft_printf("%s\n", instruction);
+	if (s->print_instructions)
+		ft_printf("%s\n", instruction);
 	s->instruction_count++;
 }

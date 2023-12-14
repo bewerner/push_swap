@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   init_stacks.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bwerner <bwerner@student.42heilbronn.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 17:25:38 by bwerner           #+#    #+#             */
-/*   Updated: 2023/12/10 23:35:32 by bwerner          ###   ########.fr       */
+/*   Updated: 2023/12/14 02:11:16 by bwerner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,11 @@ void	whitespace_to_space(char *str)
 {
 	int		i;
 
+	if (!*str)
+	{
+		write(2, "Error\n", 6);
+		exit (1);
+	}
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -87,23 +92,4 @@ void	whitespace_to_space(char *str)
 			str[i] = ' ';
 		i++;
 	}
-}
-
-int	main(int argc, char **argv)
-{
-	t_push_swap	s;
-
-	s.argc = argc;
-	s.cost = NULL;
-	s.a = NULL;
-	s.b = NULL;
-	if (argc > 2)
-		push_swap(&s, argv + 1);
-	if (argc == 2)
-	{
-		whitespace_to_space(argv[1]);
-		push_swap(&s, ft_split(argv[1], ' '));
-	}
-	free_stacks(&s);
-	return (0);
 }

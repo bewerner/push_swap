@@ -19,7 +19,7 @@ FT_PRINTF_CFILES		=	ft_printf/ft_printf_bonus.c ft_printf/ft_printf_bonus.c ft_p
 
 OFILES					=	$(CFILES:.c=.o)
 
-CFLAGS					=	
+CFLAGS					=	-Wall -Wextra -Werror
 
 CC						=	cc
 

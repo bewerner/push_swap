@@ -6,7 +6,7 @@
 /*   By: bwerner <bwerner@student.42heilbronn.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 22:36:35 by bwerner           #+#    #+#             */
-/*   Updated: 2023/12/10 22:36:52 by bwerner          ###   ########.fr       */
+/*   Updated: 2023/12/11 21:12:50 by bwerner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,8 @@ void	rotate_to_top(int i_a, int i_b, t_push_swap *s)
 		rotate_a_b(a_up, b_dn * -1, s);
 	else if (a_dn + b_up == cost)
 		rotate_a_b(a_dn * -1, b_up, s);
-	else if (a_up == cost || b_up == cost)
+	else if ((a_up >= b_up && a_up == cost) || (b_up >= a_up && b_up == cost))
 		rotate_a_b(a_up, b_up, s);
-	else if (a_dn == cost || b_dn == cost)
+	else if ((a_dn >= b_dn && a_dn == cost) || (b_dn >= a_dn && b_dn == cost))
 		rotate_a_b(a_dn * -1, b_dn * -1, s);
 }
