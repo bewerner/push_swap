@@ -2,13 +2,12 @@
 
 Average moves for 100 numbers:  559
 
-
-
 Average moves for 500 numbers: 3856
 
 ---
+---
 
-# push_swap
+## push_swap
 
 `make`
 
@@ -16,7 +15,7 @@ Average moves for 500 numbers: 3856
 
 ---
 
-# checker (push_swap_bonus)
+## checker (push_swap_bonus)
 
 `make bonus`
 
@@ -25,5 +24,3 @@ Average moves for 500 numbers: 3856
 ---
 
 For more details, read the [subject](en.subject.pdf).
-
----
