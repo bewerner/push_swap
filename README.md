@@ -25,6 +25,11 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 
 ## Example
 
+<table>
+<tr><td>
+
+> ⠀
+
 | 6 | ⠀ |
 |---|---|
 | 3 |   |
@@ -35,6 +40,8 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 | a | b |
 |---|---|
 
+</td><td>
+
 > pb
 
 |   | ⠀ |
@@ -47,11 +54,13 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 | a | b |
 |---|---|
 
+</td><td>
+
 > pb
 
 |   | ⠀ |
 |---|---|
-|   |   |
+|   | ⠀ |
 | 8 |   |
 | 7 | 3 |
 | 1 | 6 |
@@ -59,11 +68,13 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 | a | b |
 |---|---|
 
+</td><td>
+
 > ss
 
 |   | ⠀ |
 |---|---|
-|   |   |
+|   | ⠀ |
 | 7 |   |
 | 8 | 6 |
 | 1 | 3 |
@@ -71,7 +82,21 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 | a | b |
 |---|---|
 
+</td><td>
+
 > pa
+
+|   | ⠀ |
+|---|---|
+| 6 |   |
+| 7 |   |
+| 8 |   |
+| 1 | 3 |
+
+| a | b |
+|---|---|
+
+</td><td>
 
 > pa
 
@@ -85,6 +110,8 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 | a | b |
 |---|---|
 
+</td><td>
+
 > ra
 
 | 1 | ⠀ |
@@ -97,7 +124,7 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 | a | b |
 |---|---|
 
-> done after 6 operations
+</td></tr> </table>
 
 ---
 
