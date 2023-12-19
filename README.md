@@ -1,3 +1,47 @@
+## Rules
+
+The goal ist to sort a list of random numbers using two stacks with as few operations as possible.
+The only operations allowed are:
+
+```
+sa: Swap the two numbers on top of stack a.
+sb: Swap the two numbers on top of stack b.
+ss: sa and sb at the same time. Only counts as one operation.
+
+pa: Push the number on top of stack a to the top of stack b.
+pb: Push the number on top of stack b to the top of stack a.
+
+ra: Shift the position of each number on stack a up by one. The number on the top gets moved to the bottom.
+rb: Shift the position of each number on stack b up by one. The number on the top gets moved to the bottom.
+rr: ra and rb at the same time. Only counts as one operation.
+
+rra: Shift the position of each number on stack a down by one. The number on the bottom gets moved to the top.
+rrb: Shift the position of each number on stack b down by one. The number on the bottom gets moved to the top.
+rrr: rra and rrb at the same time. Only counts as one operation.
+```
+
+---
+
+## Example
+
+|6|  | |
+|3|  | |
+|8|  | |
+|1|  | |
+|2|  | |
+|7|  | |
+|-|  |-|
+ a    b 
+
+
+|   |   |
+|---|---|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
 ---
 
 Average moves for 100 numbers:  559
