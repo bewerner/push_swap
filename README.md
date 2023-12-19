@@ -32,7 +32,10 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 | 1 |   |
 | 2 |   |
 | 7 |   |
-  a   b
+
+
+| a | b |
+|---|---|
 
 ---
 
