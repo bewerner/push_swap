@@ -5,12 +5,12 @@ The goal ist to sort a list of random numbers using two stacks with as few opera
 The only operations allowed are:
 
 ```
+pa: Push the number on top of stack a to the top of stack b.
+pb: Push the number on top of stack b to the top of stack a.
+
 sa: Swap the two numbers on top of stack a.
 sb: Swap the two numbers on top of stack b.
 ss: sa and sb at the same time. Only counts as one operation.
-
-pa: Push the number on top of stack a to the top of stack b.
-pb: Push the number on top of stack b to the top of stack a.
 
 ra: Shift the position of each number on stack a up by one. The number on the top gets moved to the bottom.
 rb: Shift the position of each number on stack b up by one. The number on the top gets moved to the bottom.
@@ -25,19 +25,83 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 
 ## Example
 
-| 6 |   |
+| 6 | ⠀ |
 |---|---|
 | 3 |   |
 | 8 |   |
-| 1 |   |
-| 2 |   |
 | 7 |   |
-
+| 1 |   |
 
 | a | b |
 |---|---|
 
+> pb
+
+|   | ⠀ |
+|---|---|
+| 3 |   |
+| 8 |   |
+| 7 |   |
+| 1 | 6 |
+
+| a | b |
+|---|---|
+
+> pb
+
+|   | ⠀ |
+|---|---|
+|   |   |
+| 8 |   |
+| 7 | 3 |
+| 1 | 6 |
+
+| a | b |
+|---|---|
+
+> ss
+
+|   | ⠀ |
+|---|---|
+|   |   |
+| 7 |   |
+| 8 | 6 |
+| 1 | 3 |
+
+| a | b |
+|---|---|
+
+> pa
+
+> pa
+
+| 3 | ⠀ |
+|---|---|
+| 6 |   |
+| 7 |   |
+| 8 |   |
+| 1 |   |
+
+| a | b |
+|---|---|
+
+> ra
+
+| 1 | ⠀ |
+|---|---|
+| 3 |   |
+| 6 |   |
+| 7 |   |
+| 8 |   |
+
+| a | b |
+|---|---|
+
+> done after 6 operations
+
 ---
+
+## My results
 
 Average moves for 100 numbers:  559
 
