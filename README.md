@@ -1,6 +1,7 @@
 ## Rules
 
 The goal ist to sort a list of random numbers using two stacks with as few operations as possible.
+
 The only operations allowed are:
 
 ```
@@ -24,23 +25,13 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 
 ## Example
 
-|6|  | |
-|3|  | |
-|8|  | |
-|1|  | |
-|2|  | |
-|7|  | |
-|-|  |-|
- a    b 
-
-
-|   |   |
-|---|---|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+| 6 |   |                 | 6 |   |                 | 6 |   |                 | 6 |   |                 | 6 |   |                 | 6 |   |                 | 6 |   |
+|---|---|                 |---|---|                 |---|---|                 |---|---|                 |---|---|                 |---|---|                 |---|---|
+| 3 |   |                 | 3 |   |                 | 3 |   |                 | 3 |   |                 | 3 |   |                 | 3 |   |                 | 3 |   |
+| 8 |   |                 | 8 |   |                 | 8 |   |                 | 8 |   |                 | 8 |   |                 | 8 |   |                 | 8 |   |
+| 1 |   |                 | 1 |   |                 | 1 |   |                 | 1 |   |                 | 1 |   |                 | 1 |   |                 | 1 |   |
+| 2 |   |                 | 2 |   |                 | 2 |   |                 | 2 |   |                 | 2 |   |                 | 2 |   |                 | 2 |   |
+| 7 |   |                 | 7 |   |                 | 7 |   |                 | 7 |   |                 | 7 |   |                 | 7 |   |                 | 7 |   |
 
 ---
 
