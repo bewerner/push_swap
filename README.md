@@ -5,8 +5,8 @@ The goal ist to sort a list of random numbers using two stacks with as few opera
 The only operations allowed are:
 
 ```
-pa: Push the number on top of stack a to the top of stack b.
-pb: Push the number on top of stack b to the top of stack a.
+pa: Push the number on top of stack b to the top of stack a.
+pb: Push the number on top of stack a to the top of stack b.
 
 sa: Swap the two numbers on top of stack a.
 sb: Swap the two numbers on top of stack b.
