@@ -162,6 +162,6 @@ Average moves for 500 numbers: 3856
 
 `make bonus`
 
-`./checker <random numbers>` or `ARG="<random numbers"; ./push_swap $ARG | ./checker $ARG`
+`./checker <random numbers>` or `ARG="<random numbers>"; ./push_swap $ARG | ./checker $ARG`
 
 ---
