@@ -28,7 +28,7 @@ rrr:  rra and rrb at the same time. Only counts as one operation.
 <table align="center">
 <tr><td align="center">
 
-⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⠀
+> ⠀
 
 | 6 | ⠀ |
 |---|---|
