@@ -5,20 +5,20 @@ The goal ist to sort a list of random numbers using two stacks with as few opera
 The only operations allowed are:
 
 ```
-pa: Push the number on top of stack b to the top of stack a.
-pb: Push the number on top of stack a to the top of stack b.
+pa:   Push the number on top of stack b to the top of stack a.
+pb:   Push the number on top of stack a to the top of stack b.
 
-sa: Swap the two numbers on top of stack a.
-sb: Swap the two numbers on top of stack b.
-ss: sa and sb at the same time. Only counts as one operation.
+sa:   Swap the two numbers on top of stack a.
+sb:   Swap the two numbers on top of stack b.
+ss:   sa and sb at the same time. Only counts as one operation.
 
-ra: Shift the position of each number on stack a up by one. The number on the top gets moved to the bottom.
-rb: Shift the position of each number on stack b up by one. The number on the top gets moved to the bottom.
-rr: ra and rb at the same time. Only counts as one operation.
+ra:   Shift the position of each number on stack a up by one. The number on the top gets moved to the bottom.
+rb:   Shift the position of each number on stack b up by one. The number on the top gets moved to the bottom.
+rr:   ra and rb at the same time. Only counts as one operation.
 
-rra: Shift the position of each number on stack a down by one. The number on the bottom gets moved to the top.
-rrb: Shift the position of each number on stack b down by one. The number on the bottom gets moved to the top.
-rrr: rra and rrb at the same time. Only counts as one operation.
+rra:  Shift the position of each number on stack a down by one. The number on the bottom gets moved to the top.
+rrb:  Shift the position of each number on stack b down by one. The number on the bottom gets moved to the top.
+rrr:  rra and rrb at the same time. Only counts as one operation.
 ```
 
 ---
