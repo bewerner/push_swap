@@ -124,7 +124,7 @@ rrr: rra and rrb at the same time. Only counts as one operation.
 
 </td><td align="center">
 
-> ra⠀⠀⠀⠀⠀⠀
+> rra⠀⠀⠀⠀⠀⠀
 
 | 1 | ⠀ |
 |---|---|
