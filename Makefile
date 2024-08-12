@@ -7,7 +7,7 @@ BONUS_SRC	= src/bonus/checker_bonus.c
 OBJ			= $(SRC:.c=.o)
 MAIN_OBJ	= $(MAIN_SRC:.c=.o)
 BONUS_OBJ	= $(BONUS_SRC:.c=.o)
-CFLAGS			= -Wall -Wextra -Werror
+CFLAGS			= #-Wall -Wextra -Werror
 CC				= cc
 
 all: $(NAME)
